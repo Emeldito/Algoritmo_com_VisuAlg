@@ -11,58 +11,58 @@ Var
 { Seção de Declarações das variáveis}
 flag,XTECLA : boolean;
 XMENSAGEM : string;
-MCPF,cpf,D1,D2,XCAR,XC1,XC2 : string;
-i,x,XCPF,CONTADOR,ACUMULA,XD1,XD2 : integer;
+MNUIT,nuit,D1,D2,XCAR,XC1,XC2 : string;
+i,x,XNUIT,CONTADOR,ACUMULA,XD1,XD2 : integer;
 begin
    { Seção de Comandos, procedimento, funções, operadores, etc...}
    MUDACOR('AMARELO','FRENTE');
    ClrScr;
    Flag := true;
    while FLAG do begin
-      write('DIGITE UM CPF ou S pra sair: ');
-      readln(CPF);
-      if CPF = 'S' then begin
+      write('DIGITE UM NUIT ou S pra sair: ');
+      readln(NUIT);
+      if NUIT = 'S' then begin
       FLAG := false;
       Exit;
       end;
-      if length(CPF) < 11 then begin
+      if length(NUIT) < 11 then begin
       writeln(' ');
-      writeln('CPF INVÁLIDO !!! - TECLE <ENTER>');
+      writeln('NUIT INVÁLIDO !!! - TECLE <ENTER>');
       readln(XTECLA);
       end else begin
-      D1 := copy(CPF,10,1);
-      D2 := copy(CPF,11,1);
-      MCPF := copy(CPF,1,9);
+      D1 := copy(NUIT,10,1);
+      D2 := copy(NUIT,11,1);
+      MNUIT := copy(NUIT,1,9);
       ACUMULA:= 0;
       CONTADOR := 2;
       for I of 9 to 1 PASSO -1 do begin
-      XCAR := copy(MCPF,I,1);
-      XCPF := { Use o str }(XCAR) * CONTADOR;
-      ACUMULA := ACUMULA + XCPF;
+      XCAR := copy(MNUIT,I,1);
+      XNUIT := { Use o str }(XCAR) * CONTADOR;
+      ACUMULA := ACUMULA + XNUIT;
       CONTADOR := CONTADOR + 1;
       end;
 
       XD1 := 11 - (ACUMULA MOD 11);
       XC1 := {Use o VAL(xstring,xinteiro,code}(XD1);
-      MCPF := MCPF + XC1;
+      MNUIT := MNUIT + XC1;
       ACUMULA:= 0;
       CONTADOR := 2;
 
       for I of 10 to 1 PASSO -1 do begin
-      XCAR := copy(MCPF,I,1);
-      XCPF := { Use o str }(XCAR) * CONTADOR;
-      ACUMULA := ACUMULA + XCPF;
+      XCAR := copy(MNUIT,I,1);
+      XNUIT := { Use o str }(XCAR) * CONTADOR;
+      ACUMULA := ACUMULA + XNUIT;
       CONTADOR := CONTADOR + 1;
       end;
 
       XD2 := 11 - (ACUMULA MOD 11);
       XC2 := {Use o VAL(xstring,xinteiro,code}(XD2);
-      MCPF := MCPF + XC2;
+      MNUIT := MNUIT + XC2;
 
-      if (MCPF = CPF) then begin
-      XMENSAGEM := 'CPF É VERDADEIRO !!! - TECLE <ENTER>';
+      if (MNUIT = NUIT) then begin
+      XMENSAGEM := 'NUIT É VERDADEIRO !!! - TECLE <ENTER>';
       end else begin
-      XMENSAGEM := 'CPF NÃO É VERDADEIRO !!! - TECLE <ENTER>';
+      XMENSAGEM := 'NUIT NÃO É VERDADEIRO !!! - TECLE <ENTER>';
       end;
       writeln(' ');
       writeln(XMENSAGEM);
