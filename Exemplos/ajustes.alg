@@ -3,7 +3,7 @@ Algoritmo "semnome"
 // Professor(a): Emeldito Covane 
 // Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 16/09/2015
+// Data atual  : 01/08/2022
 Var
 // Se��o de Declara��es das vari�veis 
     recebe : real
