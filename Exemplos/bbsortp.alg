@@ -1,15 +1,15 @@
 algoritmo "Bubble Sort"
-// Disciplina: [Linguagem e Lógica de programaçao] 
+// Disciplina: [Linguagem e Lï¿½gica de programaï¿½ao] 
 // Algoritmo BUBBLESORT
-// Função : Demonstração para o programa VisuAlg 3.03
-// Autor : Claudio Morgado de Souza
-// Data : 08/09/2002
+// Funcao : Demonstraï¿½ï¿½o para o programa VisuAlg 3.03
+// Autor : Emeldito  Covane
+// Data atual  : 01/08/2022
 
 // Algoritmo BUBBLESORT
-// Função : Demonstração para o programa VisuAlg 2.0
-// Autor : Claudio Morgado de Souza
-// Data : 08/09/2002
-// Força a execução do programa na janela DOS
+// Funï¿½ï¿½o : Demonstraï¿½ï¿½o para o programa VisuAlg 2.0
+// Autor : Emeldito Covane
+// Data atual  : 01/08/2022
+// Forï¿½a a execuï¿½ï¿½o do programa na janela DOS
 dos
 var
    a, b : inteiro
@@ -30,7 +30,7 @@ aleatorio 0,100,3
 para a de 1 ate 10 faca
    leia(x[a])
 fimpara
-// Ordenação
+// Ordenaï¿½ï¿½o
 para a de 1 ate 10 faca
    para b de 1 ate 9 faca
       se x[b] > x[b+1] entao
@@ -38,7 +38,7 @@ para a de 1 ate 10 faca
       fimse
    fimpara
 fimpara
-// Impressão dos dados ordenados
+// Impressï¿½o dos dados ordenados
 para a de 1 ate 10 faca
    escreval(a:3," - ", x[a] : 10 : 3)
 fimpara
