@@ -1,20 +1,20 @@
-{ATEN«√O: Esta rotina ainda est· em desenvolvimento.
-          O cÛdigo gerado pode apresentar incorreÁıes sint·ticas. }
+{ATEN√á√ÉO: Esta rotina ainda est√° em desenvolvimento.
+          O c√≥digo gerado pode apresentar incorre√ß√µes sint√°ticas. }
 program semnome;
 uses Crt;
-{ Disciplina  : [Linguagem e LÛgica de ProgramaÁ„o]}
-{ Professor(a): Antonio Carlos Nicolodi}
-{ DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)}
+{ Disciplina  : [Linguagem e L√≥gica de Programa√ß√£o]}
+{ Professor(a): Emeldito Covane}
+{ Descri√ß√£o   : Aqui voc√™ descreve o que o programa faz! (fun√ß√£o)}
 { Autor(a)    : Nome do(a) aluno(a) EU}
-{ Data atual  : 27/09/2015}
+{ Data atual  : 01/08/2022}
 Var
-{ SeÁ„o de DeclaraÁıes das vari·veis}
+{ Se√ß√£o de Declara√ß√µes das vari√°veis}
 flag,XTECLA : boolean;
 XMENSAGEM : string;
 MCPF,cpf,D1,D2,XCAR,XC1,XC2 : string;
 i,x,XCPF,CONTADOR,ACUMULA,XD1,XD2 : integer;
 begin
-   { SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc...}
+   { Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc...}
    MUDACOR('AMARELO','FRENTE');
    ClrScr;
    Flag := true;
@@ -27,7 +27,7 @@ begin
       end;
       if length(CPF) < 11 then begin
       writeln(' ');
-      writeln('CPF INV¡LIDO !!! - TECLE <ENTER>');
+      writeln('CPF INV√ÅLIDO !!! - TECLE <ENTER>');
       readln(XTECLA);
       end else begin
       D1 := copy(CPF,10,1);
@@ -60,9 +60,9 @@ begin
       MCPF := MCPF + XC2;
 
       if (MCPF = CPF) then begin
-      XMENSAGEM := 'CPF … VERDADEIRO !!! - TECLE <ENTER>';
+      XMENSAGEM := 'CPF √â VERDADEIRO !!! - TECLE <ENTER>';
       end else begin
-      XMENSAGEM := 'CPF N√O … VERDADEIRO !!! - TECLE <ENTER>';
+      XMENSAGEM := 'CPF N√ÉO √â VERDADEIRO !!! - TECLE <ENTER>';
       end;
       writeln(' ');
       writeln(XMENSAGEM);
