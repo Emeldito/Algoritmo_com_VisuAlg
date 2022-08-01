@@ -1,17 +1,17 @@
 Algoritmo "semnome"
-// Disciplina  : [Linguagem e Lógica de Programação] 
-// Professor(a): Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Disciplina  : [Linguagem e Lï¿½gica de Programaï¿½ï¿½o] 
+// Professor(a): Emeldito Covane 
+// Descriï¿½ï¿½o   : Aqui vocï¿½ descreve o que o programa faz! (funï¿½ï¿½o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 16/09/2015
 Var
-// Seção de Declarações das variáveis 
+// Seï¿½ï¿½o de Declaraï¿½ï¿½es das variï¿½veis 
     recebe : real
     i,a,t,b,c,d, final: real
     
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// Seï¿½ï¿½o de Comandos, procedimento, funï¿½ï¿½es, operadores, etc... 
    recebe := 678.90
         i := (recebe/100)
         a := int(i) * 100
