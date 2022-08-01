@@ -1,16 +1,16 @@
 Algoritmo "CalculoMedia2"
-// Disciplina: Lógica de programação
-// Professor : Antonio Carlos Nicolodi
-// Descrição : calculo da média aritimética
-// Autor     : Professor Antonio
-// Data atual: 01/04/2015
+// Disciplina: LÃ³gica de programaÃ§Ã£o
+// Professor : Emeldito Covane
+// DescriÃ§Ã£o : calculo da mÃ©dia aritimÃ©tica
+// Autor(a)    : Professor Covane
+// Data atual  : 01/08/2022
 var
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
    Nota1, Nota2, Nota3, Nota4, Nota5 : Inteiro
    Media: Real
    Aluno : Caracter
 Inicio
-// Seção dos Comandos
+// SeÃ§Ã£o dos Comandos
    Escreva ("Digite o nome do aluno: ")
    Leia (Aluno)
    Escreva ("Digite a Primeira nota: ")
@@ -26,7 +26,7 @@ Inicio
    Media <- (Nota1+ Nota2+ Nota3+ Nota4+ Nota5) / 5
    Escreval (" ===================== ")
    Escreval (" ")
-   Escreval ("A Média final é: ", Media)
+   Escreval ("A MÃ©dia final Ã©: ", Media)
    Escreval (" ")
    Se Media >= 7 entao
       Escreval(" O Aluno ",Aluno, " Passou !")
