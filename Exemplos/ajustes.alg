@@ -1,17 +1,17 @@
 Algoritmo "semnome"
-// Disciplina  : [Linguagem e L�gica de Programa��o] 
-// Professor(a): Emeldito Covane 
-// Descri��o   : Aqui voc� descreve o que o programa faz! (fun��o)
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Emeldito Covane
+// Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 01/08/2022
 Var
-// Se��o de Declara��es das vari�veis 
+// Seção de Declarações das variáveis 
     recebe : real
     i,a,t,b,c,d, final: real
     
 
 Inicio
-// Se��o de Comandos, procedimento, fun��es, operadores, etc... 
+// Seção de Comandos, procedimento, funções, operadores, etc... 
    recebe := 678.90
         i := (recebe/100)
         a := int(i) * 100
