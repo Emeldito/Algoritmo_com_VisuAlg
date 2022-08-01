@@ -1,11 +1,11 @@
 Algoritmo "CALENDARIO"
-// Disciplina: [Linguagem e LÛgica de programaÁao] 
-// Professor: Antonio Carlos Nicolodi
-// FunÁ„o : Mostra um calend·rio a partir de uma data
-// Autor : Antonio Carlos Nicolodi
-// Data : 19/05/2015
+// Disciplina: [Linguagem e L√≥gica de programa√ßao] 
+// Professor: Emeldito Covane
+// Fun√ß√£o : Mostra um calend√°rio a partir de uma data
+// Autor(a)    : Professor Covane
+// Data atual  : 01/08/2022
 var
-// SeÁ„o de DeclaraÁıes das vari·veis 
+// Se√ß√£o de Declara√ß√µes das vari√°veis 
 
         AM  : vetor[1..6, 1..7] DE CARACTER // A matriz 6X7
         vt  : vetor[0..6] de caracter  // valor da tabela
@@ -18,7 +18,7 @@ aa,yy,mm,qq : REAL
        Flag : Logico
 pd,sx,xm,xs : CARACTER
 //
-// FunÁoes do programa
+// Fun√ßoes do programa
 //
 Funcao Data_ok(xm : Caracter) : Logico
 Var
@@ -28,7 +28,7 @@ xBar1,xbar2 : Inteiro
 Tamh,Ultimo : Inteiro
 B1,B2,Barra : caracter
 Inicio
-// Valores iniciais das vari·veis
+// Valores iniciais das vari√°veis
         Resp:= Verdadeiro
         Tamh:= Compr(xm)
        Barra:= "/"
@@ -43,10 +43,10 @@ Inicio
       Senao
          Resp:= Falso
       Fimse
-// Compara se o ano est· (foi) digitado corretamente
+// Compara se o ano est√° (foi) digitado corretamente
    Se Resp Entao
-      xBar1 := Pos(B1,Barra)//volta 0 se n„o achar 1™ Barra
-      xBar2 := Pos(B2,Barra)//volta 0 se n„o achar 2™ Barra
+      xBar1 := Pos(B1,Barra)//volta 0 se n√£o achar 1¬™ Barra
+      xBar2 := Pos(B2,Barra)//volta 0 se n√£o achar 2¬™ Barra
       Se ((xBar1 > 0) e (xBar2 > 0)) entao // verifica
          Resp := Verdadeiro
       Senao
@@ -60,7 +60,7 @@ Inicio
       SE ((Mes < 1) ou (Mes>12)) Entao
          Resp := Falso
       FimSe
-// Compara se o mes est· (foi) digitado corretamente
+// Compara se o mes est√° (foi) digitado corretamente
       Ultimo  := 31
       SE (Mes = 2) Entao
          Ultimo := 28
@@ -68,7 +68,7 @@ Inicio
             Ultimo := Ultimo + 1 // Ou seja 29
          Fimse
       Fimse
-// Compara se o dia est· (foi) digitado corretamente
+// Compara se o dia est√° (foi) digitado corretamente
       SE ((Dia < 1) ou (Dia> Ultimo)) Entao
          Resp := Falso
       FimSe
@@ -98,7 +98,7 @@ Inicio
 Fimfuncao
 
 inicio
-//  Preenche a vari·vel com os ˙ltimos dias de cada mes
+//  Preenche a vari√°vel com os √∫ltimos dias de cada mes
      sx := "31,28,31,30,31,30,31,31,30,31,30,31"
 // Preenche o vetor com os dias da semana
      vt[0] := "Dom"
@@ -109,7 +109,7 @@ inicio
      vt[5] := "Sex"
      vt[6] := "Sab"
 
-//  Entra em um laÁo (loop) pra pedir a data correta
+//  Entra em um la√ßo (loop) pra pedir a data correta
     Flag := Verdadeiro
     Enquanto Flag Faca
       LimpaTela
@@ -123,12 +123,12 @@ inicio
          Flag := Falso
       fimse
     FimEnquanto
-//Desmonta a data em pedaÁos (dia, mÍs, ano) conf. a mascara
+//Desmonta a data em peda√ßos (dia, m√™s, ano) conf. a mascara
     Dia := CARACPNUM(COPIA(XM,1,2))
     Mes := CARACPNUM(COPIA(XM,4,2))
     Ano := CARACPNUM(COPIA(XM,7,4))
 
-//  Calcula o primeiro dia do mes para montar o calend·rio
+//  Calcula o primeiro dia do mes para montar o calend√°rio
     A := int((14 - Mes) / 12)
     Y := Ano - A
     M := Mes + (12 * A) - 2
@@ -139,15 +139,15 @@ inicio
 //     aa:= int(y/100)
 //     yy:= int(y/400)
 //     q := Dia + mm + y + qq - aa + yy
-//  ObservaÁ„o PRA ACHAR O MOD (tem q ser inteiro)
-//  nessa fÛrmula vai retornar de 0-6
+//  Observa√ß√£o PRA ACHAR O MOD (tem q ser inteiro)
+//  nessa f√≥rmula vai retornar de 0-6
 
     d := Int(q)    // Transroma o 'q' em inteiro = int(q)
-    d := (d mod 7) //(resto da divis„o por 7)
-    xs := vt[d]    // 'd' È real mas no vetor tem q ser
+    d := (d mod 7) //(resto da divis√£o por 7)
+    xs := vt[d]    // 'd' √© real mas no vetor tem q ser
                    // um valor inteiro
 
-//  Formula pra calcular a posiÁ„o do ultimo dia/mÍs
+//  Formula pra calcular a posi√ß√£o do ultimo dia/m√™s
     K      := (Mes * 3) - 2
     Ultimo := CaracPNum(Copia(sx,K,2))
 
@@ -163,14 +163,14 @@ inicio
    Coluna := d + 1 //acrescenta de 1 (Um) p/ posicionar certo
    Enquanto T <= Ultimo faca
         Se T = 1 Entao
-           Pd:= "1∫"
+           Pd:= "1¬∫"
         senao
            Pd:= StrZero(T,2)
         Fimse
         SE ((T > 1) e (T = DIA)) Entao
            Pd := "><"
         Fimse
-        am[Linha,Coluna] := Pd // carrega o n˙mero do dia
+        am[Linha,Coluna] := Pd // carrega o n√∫mero do dia
         T := T + 1
         Coluna := Coluna + 1
         SE Coluna > 7 entao
@@ -183,12 +183,12 @@ inicio
    FIMENQUANTO
 
    LimpaTela
-// Mostra o cabeÁalho do calend·rio
+// Mostra o cabe√ßalho do calend√°rio
    Escreval("Data: ",xm)
    Para i de 0 ate 6 faca
        Escreva(vt[i]," ")
    FimPara
-// Mostrar o calend·rio na tela
+// Mostrar o calend√°rio na tela
    para i de 1 ate 6 faca
       Escreval(" ")
       para j de 1 ate 7 faca
