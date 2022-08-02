@@ -1,15 +1,15 @@
 Algoritmo "semnome"
-// Disciplina: [Linguagem e Lï¿½gica de programaï¿½ao] 
+// Disciplina: [Linguagem e Lógica de programaçao] 
 // Professor: Antonio Carlos Nicolodi
-// Funï¿½ï¿½o: Calcula os passos de um caracol para subir o poï¿½o
+// Função: Calcula os passos de um caracol para subir o poço
 // Autor    : Antonio Carlos Nicolodi
 // Data : 06/06/2003
-// Seï¿½ï¿½o de Declaraï¿½ï¿½es
+// Seção de Declarações
 var
  j,k : inteiro
  v : vetor [1..5,1..5] de inteiro
 inicio
-// Seï¿½ï¿½o de Comandos
+// Seção de Comandos
 para j de 1 ate 5 faca
    para k de 1 ate 5 faca
       v[j,k] <- j*5+k
